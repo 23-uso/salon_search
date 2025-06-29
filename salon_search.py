@@ -1,3 +1,12 @@
+import streamlit as st
+
+try:
+    import plotly
+    st.success(f"✅ plotly が使えます！バージョン: {plotly.__version__}")
+except ModuleNotFoundError as e:
+    st.error("❌ plotly が見つかりません: " + str(e))
+
+
 #!/usr/bin/env python
 # coding: utf-8
 
